@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="books.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Library App</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            <div class="header-container">
+                <h1>LIBRARY</h1>
+            </div>
+        </header>
+        <button class="btn btn--add">Add Book</button>
+            <div class="container-principal">
+            <!-- <div class="book">
+                <h1 class='book__name'>Book</h1>
+                <h1 class='book__author'>Autor</h1>
+                <h1 class='book__pages'>Pages</h1>
+                <button class="btn read">Read</button>
+                <button class="btn remove">Remove</button>
+            </div>     -->
+        </div>
+    </div>
+    <!-- Form for adding a book, with a checkbox that indicates if it was read or not -->
+    <div class="form-container">
+        <div class="form">
+            <div class='exit-container'>
+                <button class="btn btn--exit"><h2>X</h2></button>
+                <h1 class="form__title">Adding a book</h1>
+            </div>
+            <input class="form__input" type="text" name="name" placeholder="Name" >
+            <input class="form__input" type="text" name="author" placeholder="Author">
+            <input class="form__input" type="number" name="pages" placeholder="Pages">
+            <div class="read-container">
+                <label for="read">Have you read it?</label>
+                <input class="form__input" type="checkbox" name="read" onclick='if (this.checked) {this.value = true} else {this.value = false}'/>
+            </div>
+            <button class='btn btn--submit'>Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>

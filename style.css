@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+:root {
+    /* background */
+    --bg-color: #F0E9D2;
+    /* cards background */
+    --card-bg: #E6DDC4;
+    /* other things */
+    --text-color: #678983;
+    --extra: #181D31;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    background-color: var(--card-bg);
+    text-align: center;
+}
+
+/* Blur */
+
+.blur {
+    filter: blur(5px);
+}
+
+
+
+
+/* Container add */
+.form-container {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    border: 2px solid var(--extra);
+    padding: 2rem;
+    background-color: #678983;
+}
+
+
+.show {
+    display: block;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form__input {
+    height: 30px;
+}
+
+/* Read container */
+
+.read-container > label {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+/* Exit container */
+
+/* Header */
+
+.header {   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    font-size: 40px;
+    min-height: 20vh;
+    min-width: 100vw;
+}
+
+
+/* container principal */
+
+.container-principal {
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+/* book */
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    border: 2px solid var(--extra);
+    border-radius: 5px;
+    background-color: var(--text-color);
+    width: 300px;
+}
+
+
+.book__pages {
+    margin-bottom: 10px;
+}
+
+
+
+/* btn */
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid var(--extra);
+    font-weight: bold;
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn--add{
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--extra);
+    color: var(--text-color);
+}
+
+.btn--read {
+    background-color: rgb(24, 167, 72);
+}
+
+.btn--not_read {
+    background-color: rgb(150, 37, 37);
+}
+
+
+.btn--remove{
+    background: rgb(139, 17, 17);
+}
+
+.btn--exit {
+    border: none;
+    background-color: var(--text-color);
+    position: relative;
+    top: -20px;
+    left: 90px;
+    width:auto;
+    padding: 0 5px;
+    margin-bottom: 15px;
+
+}
