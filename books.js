@@ -90,9 +90,9 @@ function addBookHtml(libro) {
     let newBook = document.createElement('div');
     newBook.classList.add('book');
     newBook.innerHTML = `
-    <h1 class='book__name'>Name: ${libro.title}</h1>
-    <h1 class='book__author'>Author: ${libro.author}</h1>
-    <h1 class='book__pages'>Pages: ${libro.pages}</h1>
+    <h1 class='book__name'>${libro.title}</h1>
+    <h1 class='book__author'>${libro.author}</h1>
+    <h1 class='book__pages'>${libro.pages}</h1>
     <button class="btn read">Read</button>
     <button class="btn remove">Remove</button>
                                                 `
@@ -182,7 +182,7 @@ submitBtn.addEventListener('click', e => {
         let author = form[1].value;
         let pages = form[2].value;
         let read = form[3].value;
-        if (read  == 'true'){
+        if (read){
             let book = new Book(title, author, pages, true);
             addIndividualBook(book);
         } else {
