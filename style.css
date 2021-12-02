@@ -104,6 +104,11 @@ body {
     border-radius: 5px;
     background-color: var(--text-color);
     width: 300px;
+    transition: all 0.5s;
+}
+
+.book:hover {
+    box-shadow: 0 10px 10px var(--extra);
 }
 
 
@@ -123,6 +128,7 @@ body {
     font-weight: bold;
     width: 200px;
     cursor: pointer;
+    transition: all 400ms ease;
 }
 
 .btn--add{
@@ -142,9 +148,9 @@ body {
     background-color: rgb(150, 37, 37);
 }
 
-
-.btn--remove{
-    background: rgb(139, 17, 17);
+.remove:hover {
+    background-color: rgb(150, 37, 37);
+    
 }
 
 .btn--exit {
